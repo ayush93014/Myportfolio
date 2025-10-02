@@ -4,81 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Ayush Kumar — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
-    <header>
-        <table>
-            <tr>
-                <td>
-                    <img width="200" src="WhatsApp Image 2025-06-23 at 00.09.25_5ef35e6b.jpg"
-                        alt="Pic of me">
-                </td>
-                <td>
-                    <h1>Ayush kumar</h1>
-                    <h3>
-                        <i>Future Nitian</i>
-                        <br>
-                        Learning wwb development 😎
-                    </h3>
 
-                </td>
-            </tr>
-        </table>
-    </header>
-    <main>
-        <h2>EDUCATION</h2>
-        <table border="">
-            <tr>
-                <td></td>
-                <td>SCHOOL</td>
-                <td>BOARD</td>
-                <td>PASSING YEAR</td>
-                <td>PERCENTAGE</td>
-            </tr>
-            <tr>
-                <td>Class 10</td>
-                <td>Sacred heart school</td>
-                <td>ICSE</td>
-                <td>2022</td>
-                <td>85%</td>
-            </tr>
-            <tr>
-                <td>Class 12</td>
-                <td>Gopal ji memorial school</td>
-                <TD>CBSE</TD>
-                <td>2024</td>
-                <td>66%</td>
-            </tr>
-        </table>
-        <hr>
-        <h2>PROJECTS</h2>
-        <p><a target="_blank" href="service.html">Create fully personalized</a>websites by simply providing your information. Our platform takes care of the
-            rest—quick, easy, and professional.</p>
-    </main>
-    <footer>
-        <hr>
-        <h2>CONTACT US</h2>
-        <table>
-            <tr>
-                <td>MOBILE No : </td>
-                <td><a href="tel:+919935376514">9935376514</a></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><a href="tel:+918303127933">8303127933</a></td>
-            </tr>
-            <tr>
-                <td>EMAIL: </td>
-                <td><a href="mailto: ayush93014@gmail.com">ayush93014@gmail.com</a></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><a href="mailto:ayushiitprep@gmail.com">ayushiitprep@gmail.com</a></td>
-            </tr>
-        </table>
-    </footer>
+    <!-- Live Background -->
+    <div class="background"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <img src="img/logo.png" alt="Logo">
+        <div class="links">
+            <a href="#" onclick="showHome()">Home</a>
+            <a href="#" onclick="showServices()">Services</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="content" id="home">
+            <header class="site-header">
+                <div class="profile">
+                    <img class="avatar" src="img/profile.jpg" alt="Profile Picture" style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover; border: 3px solid #00ffff;">
+                    <div class="profile-info">
+                        <h1>Ayush Kumar</h1>
+                        <p class="tagline"><em>B.Tech CSE Student at NIT Sikkim</em></p>
+                        <a href="#contact" class="button neon-button">Get In Touch</a>
+                    </div>
+                </div>
+            </header>
+
+        <main class="container">
+            <!-- Education -->
+            <section id="education" class="card neon-card">
+                <h2><span class="accent-text">E</span>ducation</h2>
+                <div class="edu-grid">
+                    <div class="edu-item">
+                        <h3>B.Tech - Computer Science & Engineering</h3>
+                        <p class="muted">National Institute of Technology, Sikkim</p>
+                        <p>Status: <strong>Ongoing</strong></p>
+                        <p>Focus: <strong>Web Development & AI</strong></p>
+                    </div>
+                    <div class="edu-item">
+                        <h3>Class 12</h3>
+                        <p class="muted">Gopal Ji Memorial School — CBSE</p>
+                        <p>Passing Year: <strong>2024</strong></p>
+                        <p>Percentage: <strong class="stat-highlight">66%</strong></p>
+                    </div>
+                    <div class="edu-item">
+                        <h3>Class 10</h3>
+                        <p class="muted">Sacred Heart School — ICSE</p>
+                        <p>Passing Year: <strong>2022</strong></p>
+                        <p>Percentage: <strong class="stat-highlight">85%</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements -->
+            <section id="achievements" class="card neon-card">
+                <h2><span class="accent-text">A</span>chievements & <span class="accent-text">C</span>ertificates</h2>
+                <div class="projects">
+                    <article class="project neon-project">
+                        <h3>Web Development Certificate</h3>
+                        <p class="muted">Completed a comprehensive course on Full-Stack Web Development.</p>
+                        <p>Source: <strong>Udemy/Coursera</strong></p>
+                    </article>
+                    <article class="project neon-project">
+                        <h3>Competitive Programming Rank</h3>
+                        <p class="muted">Achieved a top 50 rank in a coding contest.</p>
+                        <p>Platform: <strong>CodeChef/HackerRank</strong></p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="card neon-card">
+                <h2><span class="accent-text">P</span>rojects</h2>
+                <div class="projects">
+                    <article class="project neon-project">
+                        <h3>Agronova: Web Design & Development</h3>
+                        <p>A modern, aesthetic website design project focusing on user experience for an
+                            agricultural-themed product/service.</p>
+                        <a class="project-link" href="https://lovable.dev/projects/b18a4525-8bda-4cd9-b08d-1137bfb0f419"
+                            target="_blank">View Project →</a>
+                    </article>
+                    <article class="project neon-project">
+                        <h3>Create fully personalized websites</h3>
+                        <p>Provide your information and get a quick, easy, professional website.</p>
+                        <a class="project-link" href="#services">Learn More →</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Contact -->
+        <footer id="contact" class="site-footer neon-card">
+            <div class="container footer-inner">
+                <div>
+                    <h3><span class="accent-text">C</span>ontact</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/ayush._.ku" target="_blank"
+                            class="social-button">Instagram</a>
+                    </div>
+                    <div class="contact-group">
+                        <strong>Mobile</strong>
+                        <div class="contact-links">
+                            <a href="tel:+919935376514">+91 99353 76514</a>
+                            <a href="tel:+918303127933">+91 83031 27933</a>
+                        </div>
+                    </div>
+                    <div class="contact-group">
+                        <strong>Email</strong>
+                        <div class="contact-links">
+                            <a href="mailto:ayush93014@gmail.com">ayush93014@gmail.com</a>
+                            <a href="mailto:ayushiitprep@gmail.com">ayushiitprep@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="smallprint">
+                    <p>&copy; <span id="year"></span> Ayush Kumar — B.Tech CSE at NIT Sikkim</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Services Section -->
+    <div class="content" id="services" style="display: none;">
+        <main class="container">
+            <section class="card neon-card">
+                <h2><span class="accent-text">P</span>ortfolio Creation Service</h2>
+                <p>Get a fully personalized portfolio website for just 100 INR. Provide your details below, pay via UPI, and I'll create a professional portfolio for you.</p>
+                <form id="portfolio-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Portfolio Description:</label>
+                        <textarea id="description" name="description" rows="5" placeholder="Describe what you want in your portfolio: skills, projects, education, etc." required></textarea>
+                    </div>
+                    <button type="submit" class="button neon-button">Submit Request</button>
+                </form>
+                <div class="payment-info">
+                    <h3>Payment</h3>
+                    <p>Pay 100 INR to UPI ID: <strong>9935376514@fam</strong></p>
+                    <p>Scan the QR code below to pay:</p>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=9935376514@fam&pn=Ayush%20Kumar&am=100&cu=INR" alt="UPI QR Code">
+                    <p>After payment, send the transaction ID to my email or WhatsApp for confirmation.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
